@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS is still needed for text styling inside the box -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <div class="mobile-frame">
+        <div class="scroll-content">
+            <section class="invitation-name">
+                <img src="images/overlay1.svg" alt="Flower" class="decor-top-left" />
+                <img src="images/overlay1.svg" alt="Flower" class="decor-top-right" />
+                <div class="invite-name">
+                    <h2 class="invitation-message">សូមគោរពអញ្ជើញ</h2>
+                    <div class="name-frame">
+                        <div id="guest-title">${row["guest-title"]}</div>
+                        <!-- <div id="guest-title">លោក/លោកស្រី</div> -->
+                    </div>
+                    <div style="padding-top: 3mm;">
+                        ចូលរួមជាភ្ញៀវកិត្តិយស ដល់គូរស្វាមី ភរិយាថ្មី នៅថ្ងៃដ៏ពិសេសនេះ
+                    </div>
+                </div>
+                <!-- <h2 class="formal-header">សិរីសួស្តីអាពាហ៍ពិពាហ៍</h2> -->
+                <h1 class="names">រឿម មករា</h1>
+                <img src="icons/ring.svg" alt="Wedding Rings" class="rings-icons">
+                <h1 class="names">កែវ ក័ន្យារ៉ាត់</h1>
+                <p class="description-text">
+                    រក្សាទុក កាលបរិច្ឆេទសម្រាប់ការប្រារព្ធ ពិធីពិសេសរបស់យើងខ្ញុំ <br>
+                    នាថ្ងៃទី ០៧ ខែ វិច្ឆិកា ឆ្នាំ ២០២៥ <br>
+                    នឹងក្លាយជាព្រឹត្តិការណ៍ដែលមិនអាចបំភ្លេចបាន
+                </p>
+            </section>
+
+            <hr class="section-divider" />
+
+            <section class="page relative text-center">
+                <div class="info-box">
+                  <h1 class="text-2xl font-bold mb-4">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
+                  <div class="text-base leading-relaxed space-y-1 mb-6">
+                    <p>លោកស្រី ឡឹក សារី &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; លោក កែវ សេដ្ខា</p>
+                    <p>លោកស្រី ឡឹក សារួន &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; លោកស្រី សាន សារី</p>
+                    
+                    <p class="mt-2 font-semibold text-lg">សុំគោរពអញ្ជើញ</p>
+                    <p>សម្ដេច ទ្រង់ ឯកឧត្ដម អ្នកឧកញ៉ា ឧកញ៉ា លោកជំទាវ</p>
+                    <p>លោក លោកស្រី អ្នកនាងកញ្ញា អញ្ចើញចូលរួមជា អធិបតី</p>
+                    <p>និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្ដី ជ័យមង្គល</p>
+                    <p>ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ</p>
+                  </div>
+                  <div class="flex justify-around font-bold text-lg px-6 mb-4">
+                    <div>
+                      <div>កូនប្រុស</div>
+                      <div class="text-xl">រឿម មករា</div>
+                    </div>
+                    <div>
+                      <div>កូនស្រី</div>
+                      <div class="text-xl">កែវ ក័ន្យារ៉ាត់</div>
+                    </div>
+                  </div>
+                  <div class="text-sm">
+                    <p>នៅលើផ្ទះប្រពៃណីខ្មែរ ចំពីថ្ងៃទី ៥ ល្ងាច</p>
+                    <p>ថ្ងៃព្រហស្បតិ៍ ទី ១៦ ខែតុលា ឆ្នាំ២០២៥</p>
+                    <p class="mt-4">សូមគោរពអញ្ជើញមក</p>
+                  </div>
+                </div>
+            </section>
+
+            <hr class="section-divider" />
+
+            <div class="couple-container">
+                <div class="person">
+                    <div class="title">កូនប្រុសនាម</div>
+                    <img src="images/Groom_Photo.jpg" alt="Groom">
+                    <div class="name">រឿម មករា</div>
+                </div>
+                <div class="person">
+                    <div class="title">កូនស្រីនាម</div>
+                    <img src="images/bride_photo.jpg" alt="Bride">
+                    <div class="name">កែវ ក័ន្យារ៉ាត់</div>
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <div class="schedule-container">
+                <h2 class="schedule-title">សិរីមង្គលអាពាហ៍ពិពាហ៍</h2>
+                <p class="schedule-date">ថ្ងៃព្រហស្បតិ៍ ទី០៦ ខែវិច្ឆិកា ឆ្នាំ២០២៥</p>
+                <h3 class="schedule-subtitle">កម្មវិធីពេលល្ងាច</h3>
+                <div class="item">
+                    <img src="https://placehold.co/70x70/b38a00/ffffff?text=Icon" alt="Dinner">
+                    <div class="time">ម៉ោង ០៥:០០ ល្ងាច</div>
+                    <div class="desc">អាហារពេលល្ងាចជាមួយគ្រួសារ</div>
+                </div>
+            </div>
+            
+            <div class="schedule-container">
+                <h2 class="schedule-title">សិរីមង្គលអាពាហ៍ពិពាហ៍</h2>
+                <p class="schedule-date">ថ្ងៃសុក្រ ទី០៧ ខែវិច្ឆិកា ឆ្នាំ២០២៥</p>
+                <h3 class="schedule-subtitle">កម្មវិធីពេលព្រឹក</h3>
+                <div class="item">
+                    <img src="https://placehold.co/70x70/b38a00/ffffff?text=Icon" alt="Haircut">
+                    <div class="time">ម៉ោង ០៩:០០ ព្រឹក</div>
+                    <div class="desc">ពិធីកាត់សក់បង្កក់សិរី</div>
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <div class="container1">
+                <h1 class="text-2xl font-bold mb-4 text-center">កម្មវិធីថ្ងៃមង្គល</h1>
+                <div class="item">
+                    <img src="https://placehold.co/70x70/2e4e3f/ffffff?text=Icon" alt="Breakfast">
+                    <div class="time">ចូល ០៨:០០ ព្រឹក</div>
+                    <div class="desc">អាហារពេលព្រឹកជាមួយគ្រួសារទៅកាន់ព្រឹក</div>
+                </div>
+                <div class="item">
+                    <img src="https://placehold.co/70x70/2e4e3f/ffffff?text=Icon" alt="Haircut">
+                    <div class="time">ចូល ០៨:០០ ព្រឹក</div>
+                    <div class="desc">កាត់សក់សំអាងខ្លួន</div>
+                </div>
+                <div class="item">
+                    <img src="https://placehold.co/70x70/2e4e3f/ffffff?text=Icon" alt="Dance">
+                    <div class="time">ចូល ១០:៣០ ព្រឹក</div>
+                    <div class="desc">សំរាប់សង្រែក យ៉ាងចិត្តសប្បាយ និង ទទួលជ័យជម្នះ</div>
+                </div>
+                <div class="item">
+                    <img src="https://placehold.co/70x70/2e4e3f/ffffff?text=Icon" alt="Lunch">
+                    <div class="time">ចូល ១១:០០ ព្រឹក</div>
+                    <div class="desc">អាហារពេលថ្ងៃជាមួយគ្រួសារទៅកាន់ថ្ងៃថ្មី</div>
+                </div>
+            </div>
+            
+            <hr class="section-divider" />
+
+            <!-- NEW GALLERY SECTION -->
+            <section class="gallery-container">
+                <h1 class="text-2xl font-bold mb-4 text-center">វិចិត្រសាល</h1>
+                <div class="gallery-grid">
+                    <img src="https://placehold.co/300x400/cccccc/333333?text=Photo+1" alt="Gallery image 1">
+                    <img src="https://placehold.co/300x400/cccccc/333333?text=Photo+2" alt="Gallery image 2">
+                    <img src="https://placehold.co/300x400/cccccc/333333?text=Photo+3" alt="Gallery image 3">
+                    <img src="https://placehold.co/300x400/cccccc/333333?text=Photo+4" alt="Gallery image 4">
+                    <img src="https://placehold.co/300x400/cccccc/333333?text=Photo+5" alt="Gallery image 5">
+                    <img src="https://placehold.co/300x400/cccccc/333333?text=Photo+6" alt="Gallery image 6">
+                </div>
+            </section>
+            <!-- END OF GALLERY SECTION -->
+
+        </div>
+    </div>
+</body>
+</html>

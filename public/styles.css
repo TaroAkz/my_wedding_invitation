@@ -1,0 +1,266 @@
+/* --- General Body and Frame Styles (from your code) --- */
+body {
+  margin: 0;
+  font-family: "Battambang", Arial, sans-serif;
+  background-color: #f4f1ea; /* A fallback color */
+  /* Using a placeholder for the background */
+  background-image: url("/images/background.jpg");/*  */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: inherit; /* Inherits the background from the body */
+  filter: blur(2px);
+  z-index: -2;
+}
+
+.mobile-frame {
+  position: relative; /* Changed from fixed for better scrolling */
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto; /* Allow content to define height */
+  max-height: 95vh; /* Limit height relative to viewport */
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 100, 0.2);
+  overflow: hidden;
+  z-index: 1;
+  display: flex; /* Use flexbox for the scroll container */
+  flex-direction: column;
+}
+
+.scroll-content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.scroll-content::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for a cleaner look */
+}
+
+/* --- Invitation Content Styles --- */
+
+.invitation-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.invitation-content,
+.card {
+  text-align: center;
+}
+
+.decor-top-left {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 150px;
+  z-index: 2;
+}
+
+.decor-top-right {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 150px;
+  z-index: 2;
+  transform: scaleX(-1); /* Flips the image horizontally */
+}
+
+.invitation-message {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.name-frame {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #14532d; /* text-green-900 */
+}
+
+.names {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.rings-icons {
+  width: 60px;
+  margin: 1rem 0;
+}
+
+.description-text,
+.formal-header {
+  margin-top: 1rem;
+}
+
+.couple-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.person {
+  text-align: center;
+}
+
+.person img {
+  width: 150px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #ccc;
+}
+
+.person .title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.person .name {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* --- STYLES FOR THE NEW SCHEDULE SECTION --- */
+.schedule-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+.schedule-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #55552e;
+}
+.schedule-date {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.schedule-subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #b38a00;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  margin-bottom: 2rem;
+}
+
+/* --- Centering logic for schedule items --- */
+.container1 {
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.item .time {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2e4e3f;
+  margin: 0;
+}
+
+.item .desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* --- UPDATED GALLERY STYLES --- */
+.gallery-container {
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 150px;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid .horizontal {
+  grid-column: span 2;
+  height: 150%;
+  
+}
+
+.gallery-grid .portrait {
+  grid-row: span 2;
+}
+
+/* Custom size examples */
+.gallery-grid .custom-wide {
+  grid-column: span 2;  /* full width */
+  grid-row: span 2;     /* double height */
+}
+
+.gallery-grid .custom-tall {
+  grid-column: span 1;  /* single column */
+  grid-row: span 3;     /* triple height */
+}
+
+.gallery-grid .custom-square {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+/* --- Separator style --- */
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 2.5rem auto;
+  width: 80%;
+}
