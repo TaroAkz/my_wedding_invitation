@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
+const ip = "192.168.1.10"; //"192.168.1.16"
 const port = 3000;
 const filePath = path.join(__dirname, 'guest.json');
 
@@ -41,6 +42,6 @@ app.get('/', (req, res) => {
   res.render('index', { guestTitle: "លោក/លោកស្រី" });
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(port, ip, () => {
+  console.log(`Server running at http://${ip}:${port}`);
 });
