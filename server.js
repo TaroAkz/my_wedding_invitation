@@ -1,18 +1,42 @@
+// const express = require('express');
+// const fs = require('fs');
+// const path = require('path');
+
+// const app = express();
+// const ip = "127.0.0.1"; // Change if you want LAN access
+// const port = 3000;
+// const filePath = path.join(__dirname, 'guest.json');
+
+// // Set EJS as the template engine
+// app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, 'views'));
+
+// // Serve static files (CSS, images, JS)
+// app.use(express.static(path.join(__dirname, 'public')));
+
 const express = require('express');
+const compression = require('compression');
 const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const ip = "127.0.0.1"; // Change if you want LAN access
+const ip = "127.0.0.1";
 const port = 3000;
 const filePath = path.join(__dirname, 'guest.json');
+
+// Enable gzip / brotli compression
+app.use(compression());
 
 // Set EJS as the template engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Serve static files (CSS, images, JS)
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve static files (CSS, images) with caching
+app.use(express.static(path.join(__dirname, 'public'), {
+  maxAge: '30d',       // cache for 30 days
+  etag: true,
+  lastModified: true,
+}));
 
 let guests = [];
 
