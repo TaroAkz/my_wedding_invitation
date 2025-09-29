@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const ip = "192.168.8.152"; //"192.168.1.16"
+const ip = "192.168.1.4"; //"192.168.1.16"
 //const ip = "127.0.0.1"; //"192.168.1.16"
 const port = 3000;
 const filePath = path.join(__dirname, 'guest.json');
