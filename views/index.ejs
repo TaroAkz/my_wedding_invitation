@@ -11,14 +11,24 @@
     
 </head>
 <body class="relative">
-    <div id="landing" class="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 to-pink-100 z-50">
+    <!-- <div id="landing" class="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 to-pink-100 z-50">
         <h1 class="text-3xl font-bold text-yellow-600 mb-6">សូមគោរពអញ្ជើញ</h1>
-        <p class="mb-6 text-lg text-gray-700">ចុចដើម្បីចូលទៅកាន់ការអញ្ជើញមង្គលការ</p>
+        <p class="mb-6 text-lg text-gray-700">ចុចដើម្បីចូលទៅកាន់ការអញ្ជើញចូលរួមមង្គលការ</p>
         <button id="enterBtn" class="px-6 py-3 bg-yellow-500 text-white rounded-2xl shadow-lg text-xl hover:bg-yellow-600 transition">
         ចូល
         </button>
+    </div> -->
+    <!-- Landing Page Overlay -->
+    <div id="landing" class="fixed inset-0 flex flex-col items-center justify-center bg-cover bg-center z-50 
+            transition-opacity duration-500"
+        style="background-image: url('/images/background.jpg');">
+    <h1 class="text-3xl font-bold text-yellow-600 mb-6">សូមគោរពអញ្ជើញ</h1>
+    <p class="mb-6 text-lg text-gray-700">ចុចដើម្បីចូលទៅកាន់ការអញ្ជើញចូលរួមមង្គលការ</p>
+    <button id="enterBtn"
+            class="px-6 py-3 bg-yellow-500 text-white rounded-2xl shadow-lg text-xl hover:bg-yellow-600 transition">
+        ចូល
+    </button>
     </div>
-
     <!-- Background Music -->
     <audio id="myBackgroundMusic" loop>
         <source src="music/music_background.mp3" type="audio/mpeg">
@@ -258,7 +268,7 @@
                 </div>
             </div>
             <h2 class="text-center text-green-900 font-semibold text-2xl">
-                អរគុណសម្រាប់ការចំណាចពេលវេលាចូលរួម
+                អរគុណសម្រាប់ការចំណាយពេលវេលាចូលរួម
             </h2>
             <h2 class="text-center text-green-900 font-semibold text-2xl">
                 សូមធ្វើដំណើរដោយសុវត្ថិភាព!
@@ -270,18 +280,39 @@
 
     <script>
         
+    //const landing = document.getElementById('landing');
+    //const invitation = document.getElementById('invitation');
+    //const bg = document.getElementById('myBackgroundMusic');
+    //const enterBtn = document.getElementById('enterBtn');
+
+    //enterBtn.addEventListener('click', () => {
+    //  bg.play().catch(err => console.log("Play failed:", err));
+    //  landing.classList.add("opacity-0", "pointer-events-none");
+    //  setTimeout(() => {
+    //    landing.style.display = "none"; // fully remove after fade
+    //    invitation.classList.remove("hidden");
+    //  }, 500); // delay matches fade animation
+    //});
     const landing = document.getElementById('landing');
     const invitation = document.getElementById('invitation');
-    const bg = document.getElementById('myBackgroundMusic');
+    const bg = document.getElementById('myBackgroundMusic'); // <audio id="myBackgroundMusic">
     const enterBtn = document.getElementById('enterBtn');
 
+    // Handle enter button click
     enterBtn.addEventListener('click', () => {
-      bg.play().catch(err => console.log("Play failed:", err));
-      landing.classList.add("opacity-0", "pointer-events-none");
-      setTimeout(() => {
-        landing.style.display = "none"; // fully remove after fade
+        // Try playing background music only after click
+        if (bg) {
+        bg.play().catch(err => console.log("Play failed:", err));
+        }
+
+        // Add fade-out + disable interaction
+        landing.classList.add("opacity-0", "pointer-events-none");
+
+        // After fade (0.5s), hide landing & show invitation
+        setTimeout(() => {
+        landing.style.display = "none"; 
         invitation.classList.remove("hidden");
-      }, 500); // delay matches fade animation
+        }, 500); 
     });
   </script>
 </body>
