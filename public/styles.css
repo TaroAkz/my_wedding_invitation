@@ -323,6 +323,32 @@ body::before {
   grid-row: span 3;     /* triple height */
 }
 
+/* vertical */
+.gallery-grid img.vertical {
+  /* force it to span all columns no matter how many columns you have */
+  grid-column: 1 / -1;  
+
+  /* how many auto-rows tall it should be */
+  grid-row: span 4;     
+
+  /* make sure the image fills that grid cell */
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* ensure it stretches to fill space if the grid tries to align items */
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+
+
+
+
+
+
+
 .gallery-grid .custom-square {
   grid-column: span 1;
   grid-row: span 1;
