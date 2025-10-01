@@ -16,8 +16,8 @@
    "guest-title": "កញ្ញា ធីតា"
  },
  {
-   "Name": "Rathana",
-   "guest-title": "លោក រតនៈ"
+   "Name": "Rathanak",
+   "guest-title": "បងប្រុស រតនៈ"
  },
  {
    "Name": "Da",
@@ -137,7 +137,11 @@
  },
  {
    "Name": "Bong-Houy",
-   "guest-title": "បងស្រី ហុយ"
+   "guest-title": "បងស្រី ហ៊ុយ"
+ },
+ {
+   "Name": "Bong-Sofy",
+   "guest-title": "Bong Sofy"
  }
 ]
 
