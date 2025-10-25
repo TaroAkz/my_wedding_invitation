@@ -420,11 +420,11 @@
     "guest-title": "Mr. Natt"
   },
   {
-    "Name": "chovy",
-    "guest-title": "Ms. Chovy"
+    "Name": "sokchovy",
+    "guest-title": "Ms. Sochovy"
   },
   {
-    "Name": "kimhuy",
+    "Name": "kimhouy",
     "guest-title": "Ms. Kimhuy"
   },
   {
@@ -436,6 +436,12 @@
   },
   { "Name": "Sreynoch",
     "guest-title": "ស្រីណុច"
+  }
+  { "Name": "vichhika",
+    "guest-title": "Boss. Vichhika"
+  },
+  { "Name": "b-naret",
+    "guest-title": "បង ណារ៉េត"
   }
 ]
 
