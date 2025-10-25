@@ -396,16 +396,45 @@
     "guest-title": "លោក វេហា"
   },
   {
-    "Name": "b-rady",
-    "guest-title": "Mr. Rady"
-  },
-  {
     "Name": "b-visal",
     "guest-title": "Bong Visal"
   },
   {
       "Name": "sreynith",
       "guest-title": "Ms. Sreynith and Family"
-    }
+  },
+  {
+    "Name": "b-rady",
+    "guest-title": "Bong Rady"
+  },
+  {
+    "Name": "b-phearom",
+    "guest-title": "Bong Phearom"
+  },
+  {
+    "Name": "brasna",
+    "guest-title": "Ms. Brasna and Honey"
+  },
+  {
+    "Name": "natt",
+    "guest-title": "Mr. Natt"
+  },
+  {
+    "Name": "chovy",
+    "guest-title": "Ms. Chovy"
+  },
+  {
+    "Name": "kimhuy",
+    "guest-title": "Ms. Kimhuy"
+  },
+  {
+    "Name": "Oudom",
+    "guest-title": "Mr. Oudom"
+  },
+  { "Name": "Manny",
+    "guest-title": "Msr. Manny"
+  }
+
+
 ]
 
