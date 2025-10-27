@@ -4,7 +4,7 @@
 [![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF.svg?logo=vite)](https://vitejs.dev/)  
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC.svg?logo=tailwindcss)](https://tailwindcss.com/)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![Deploy on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://my-wedding-invitation-omega.vercel.app)
+[![Deploy on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://my-wedding-invitation-ivory.vercel.app)
 
 ---
 
@@ -13,7 +13,7 @@
 **My Wedding Invitation** is a modern, responsive wedding invitation website built with **Vue 3**, **Vite**, and **Tailwind CSS**.  
 It reimagines a traditional HTML + CSS wedding page into a clean, mobile-first experience — complete with a blurred background and a centered invitation frame designed for elegance and simplicity.
 
-👉 **Live Demo:** [my-wedding-invitation-omega.vercel.app](https://my-wedding-invitation-omega.vercel.app)
+👉 **Live Demo:** [my-wedding-invitation-omega.vercel.app](https://my-wedding-invitation-ivory.vercel.app)
 
 ---
 
