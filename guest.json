@@ -442,5 +442,11 @@
   },
   { "Name": "b-naret",
     "guest-title": "បង ណារ៉េត"
+  },
+  { "Name": "sothi",
+    "guest-title": "Mr. Sothi"
+  },
+  { "Name": "davin",
+    "guest-title": "Mr. Davin"
   }
 ]
