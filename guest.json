@@ -408,8 +408,8 @@
     "guest-title": "Bong Rady"
   },
   {
-    "Name": "b-phearom",
-    "guest-title": "Bong Phearom"
+    "Name": "b-phirum",
+    "guest-title": "Bong Phirum"
   },
   {
     "Name": "brasna",
@@ -457,5 +457,11 @@
   },
   { "Name": "pisey",
     "guest-title": "ពិសី"
+  },
+  { "Name": "b-pisean",
+    "guest-title": "Bong Pisean"
+  },
+  { "Name": "rachana",
+    "guest-title": "Ms. Rachana"
   }
 ]
