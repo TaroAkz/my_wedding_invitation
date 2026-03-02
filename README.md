@@ -13,7 +13,7 @@
 **My Wedding Invitation** is a modern, responsive wedding invitation website built with **Vue 3**, **Vite**, and **Tailwind CSS**.  
 It reimagines a traditional HTML + CSS wedding page into a clean, mobile-first experience — complete with a blurred background and a centered invitation frame designed for elegance and simplicity.
 
-👉 **Live Demo:** [my-wedding-invitation-omega.vercel.app](https://my-wedding-invitation-ivory.vercel.app)
+👉 **Live Demo:** [my-wedding-invitation-ivory.vercel.app](https://my-wedding-invitation-ivory.vercel.app)
 
 ---
 
